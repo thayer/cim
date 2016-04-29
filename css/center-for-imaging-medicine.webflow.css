@@ -429,6 +429,30 @@ a:hover {
   text-align: center;
 }
 
+.nih-button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+  border: 2px solid #2377ba;
+  border-radius: 6px;
+  -webkit-transition: -webkit-transform 200ms ease;
+  transition: -webkit-transform 200ms ease;
+  transition: transform 200ms ease;
+  transition: transform 200ms ease, -webkit-transform 200ms ease;
+}
+
+.nih-button:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.nih-link {
+  display: block;
+  margin: 20px auto;
+}
+
 @media (max-width: 991px) {
   .logo {
     width: 305px;
@@ -605,6 +629,9 @@ a:hover {
   .heading1.h1facilities {
     padding-left: 0px;
   }
+  .heading1.research-heading {
+    margin-left: 0px;
+  }
   .slidelink {
     width: 70%;
   }
@@ -647,6 +674,11 @@ a:hover {
   .slide-subtitle {
     font-size: 12px;
     line-height: 14px;
+  }
+  .nih-button:hover {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
   }
 }
 
@@ -753,6 +785,12 @@ a:hover {
   }
   .slide-title-box {
     bottom: 30px;
+  }
+  .nih-button {
+    -webkit-transition: -webkit-transform 200ms ease;
+    transition: -webkit-transform 200ms ease;
+    transition: transform 200ms ease;
+    transition: transform 200ms ease, -webkit-transform 200ms ease;
   }
 }
 
