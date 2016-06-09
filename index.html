@@ -103,24 +103,24 @@ spotlight:
     </div>
   </div>
 
-  {% unless page.spotlight_displayed == false %}
+  {% unless page.spotlight.displayed == false %}
 
   <div class="w-container spotlight">
     <div class="w-row">
       <div class="w-col w-col-5 w-col-medium-5 column">
-        <a href="{{ page.spotlight_link }}" target="_blank" class="w-inline-block spotlightimagelink">
-        <img src="{{ page.spotlight_image_path }}" class="spotlightimage" />
+        <a href="{{ page.spotlight.link }}" target="_blank" class="w-inline-block spotlightimagelink">
+        <img src="{{ page.spotlight.image_path }}" class="spotlightimage" />
         </a>
       </div>
       <div class="w-col w-col-7 w-col-medium-7 column">
-        <a href="{{ page.spotlight_link }}" target="_blank" style="color: white;"><h3 class="spotlighttitle">{{ page.spotlight_title }}</h3></a>
-        <h4 class="spotlightsubtitle">{{ page.spotlight_subtitle }}</h4>
-        <p class="spotlighttext"><strong data-new-link="true">{{ page.spotlight_dates }}
-<br /></strong><em data-new-link="true">{{ page.spotlight_location }}</em>
+        <a href="{{ page.spotlight.link }}" target="_blank" style="color: white;"><h3 class="spotlighttitle">{{ page.spotlight.title }}</h3></a>
+        <h4 class="spotlightsubtitle">{{ page.spotlight.subtitle }}</h4>
+        <p class="spotlighttext"><strong data-new-link="true">{{ page.spotlight.dates }}
+<br /></strong><em data-new-link="true">{{ page.spotlight.location }}</em>
           <br />
           <br />
-          <a target="_blank" class="spotlightlink" href="{{ page.spotlight_link }}">
-          {{ page.spotlight_highlight_link_text }}</a></p>
+          <a target="_blank" class="spotlightlink" href="{{ page.spotlight.link }}">
+          {{ page.spotlight.highlight_link_text }}</a></p>
       </div>
     </div>
   </div>
