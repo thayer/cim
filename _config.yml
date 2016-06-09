@@ -3,6 +3,12 @@ version: 3.0.3
 
 name: Center for Imaging Medicine at Dartmouth
 
+privacy_link: http://dartmouth.edu/privacy
+
+contact_page: /contact-us.html
+
+update_link: http://cim.dartmouth.edu/update
+
 defaults:
   -
     scope:
