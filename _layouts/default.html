@@ -74,11 +74,11 @@
     <div class="w-container">
       <div class="w-row">
         <div class="w-col w-col-9 w-col-small-9">
-          <p class="copyright">© {{ site.time | date: '%Y' }} {{ site.name }} • <a class="footer-link" target="_blank" href="http://dartmouth.edu/privacy">Privacy</a>&nbsp;• <a class="footer-link" href="contact-us.html">Contact</a>
+          <p class="copyright">© {{ site.time | date: '%Y' }} {{ site.name }} • <a class="footer-link" target="_blank" href="{{ site.privacy_link }}">Privacy</a>&nbsp;• <a class="footer-link" href="{{ site.contact_page }}">Contact</a>
           </p>
         </div>
         <div class="w-col w-col-3 w-col-small-3">
-          <p class="footer-link"><a class="footer-link dim-link" href="http://cim.dartmouth.edu/update">Editor Login</a>
+          <p class="footer-link"><a class="footer-link dim-link" href="{{ site.update_link }}">Editor Login</a>
           </p>
         </div>
       </div>
