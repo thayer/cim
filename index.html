@@ -40,4 +40,102 @@ spotlight:
         <div class="w-slide slides slide2">
           <a href="deep-tissue-molecular-sensing-in-vivo.html" class="w-inline-block slidelink">
             <div class="slide-title-box">
-              <div class="slide-title">{{ page.sl</div></div></a></div></div></div></div></div>
+              <div class="slide-title">{{ page.slideshow.slide_2.title }}</div>
+              <div class="slide-subtitle">{{ page.slideshow.slide_2.subtitle }}</div>
+            </div>
+          </a>
+        </div>
+        <div class="w-slide slides slide3">
+          <a href="clinical-image-guided-intervention.html" class="w-inline-block slidelink">
+            <div class="slide-title-box">
+              <div class="slide-title">{{ page.slideshow.slide_3.title }}</div>
+              <div class="slide-subtitle">{{ page.slideshow.slide_3.subtitle }}</div>
+            </div>
+          </a>
+        </div>
+        <div class="w-slide slides slide4 slideoverlay">
+          <a href="education.html" class="w-inline-block slidelink">
+            <div class="slide-title-box">
+              <div class="slide-title">{{ page.slideshow.slide_4.title }}</div>
+              <div class="slide-subtitle">{{ page.slideshow.slide_4.subtitle }}</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="w-slider-arrow-left"></div>
+      <div class="w-slider-arrow-right"></div>
+      <div class="w-slider-nav w-round slidenav"></div>
+    </div>
+  </div>
+
+  <div class="w-container page home">
+    <div class="w-row">
+      <div class="w-col w-col-7 w-col-stack column">
+        <h1 class="heading1 h1about editable">About CIM</h1>
+        <p class="editable">The <strong data-new-link="true">Center for Imaging Medicine</strong> (CIM) at Dartmouth is one of the largest collaborative hubs for optics in medicine research in the country. Spearheaded by faculty at Dartmouth's Thayer School of Engineering working with colleagues at Geisel School of Medicine, the Center facilitates global efforts to<span data-reactid=".0.0">ward innovation in biomedical imaging and therapy</span>.
+        <br />
+        <br />CIM's <strong data-new-link="true">mission</strong> is to advance state-of-the art technologies in optical sensors, multi-scale imaging and sensing, and interventional guidance in surgery, medicine, radiology, pathology, and radiation oncology. Members create, test, and deploy new technologies and participate in outreach with other collaborators at Dartmouth and around the country.
+        <br />
+        <br />Advanced sensors for low-light-level imaging are developed in parallel with higher-level optical systems for multi-scale <em data-new-link="true">in vivo</em> imaging and sensing. Each technology is eventually deployed in pre-clinical or human clinical trials with advanced algorithms for procedure guidance. CIM facilitates this process through an <span data-reactid=".0.0">international</span> network of collaborators and local advisory faculty.</p>
+      </div>
+      <div class="w-col w-col-5 w-col-stack column">
+        <h1 class="heading1 h1facilities editable">Facilities</h1>
+        <img src="{{ page.facilities_photo_path }}" class="facilities-image" />
+        <div class="editable">
+          <p>CIM facilities are based at <a target="_blank" href="http://www.dartmouth-hitchcock.org">Dartmouth-Hitchcock Medical Center</a>&nbsp;and leverage resources such as:&nbsp;</p>
+          <ul>
+            <li><a target="_blank" href="http://now.dartmouth.edu/2014/12/geisels-williamson-translational-research-building-takes-shape">Williamson Translational Research Building</a></li>
+            <li><a href="http://med.dartmouth-hitchcock.org/csi.html" target="_blank">Center for Surgical Innovation</a></li>
+            <li><a href="http://cancer.dartmouth.edu/res/cancer_imaging_radio.html" target="_blank">Advanced Imaging Center</a></li>
+            <li><a href="http://www.dartmouth.edu/optmed/" target="_blank">Optics in Medicine Lab</a></li>
+            <li><a target="_blank" href="http://med.dartmouth-hitchcock.org/dept_of_surgery/surgical_research_laboratory.html">Surgical Research Lab</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% unless page.spotlight.displayed == false %}
+
+  <div class="w-container spotlight">
+    <div class="w-row">
+      <div class="w-col w-col-5 w-col-medium-5 column">
+        <a href="{{ page.spotlight.link }}" target="_blank" class="w-inline-block spotlightimagelink">
+          <img src="{{ page.spotlight.image_path }}" class="spotlightimage" />
+        </a>
+      </div>
+      <div class="w-col w-col-7 w-col-medium-7 column">
+        <h3 class="spotlighttitle"><a href="{{ page.spotlight.link }}" target="_blank" style="color: white;">{{ page.spotlight.title }}</a></h3>
+        <h4 class="spotlightsubtitle">{{ page.spotlight.subtitle }}</h4>
+        <p class="spotlighttext">
+          <strong data-new-link="true">{{ page.spotlight.dates }}</strong>
+          <br />
+          <em data-new-link="true">{{ page.spotlight.location }}</em>
+          <br />
+          <br />
+          <a target="_blank" class="spotlightlink" href="{{ page.spotlight.link }}">{{ page.spotlight.highlight_link_text }}</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {% endunless %}
+
+  <div class="w-container logobar">
+    <div class="w-row">
+      <div class="w-col w-col-3 w-col-small-3 w-col-tiny-6">
+        <a href="http://dartmouth.edu" target="_blank" class="w-inline-block"><img src="images/Dartmouth_Wordmark_Web.png" class="w-preserve-3d sponsorlogo" /></a>
+      </div>
+      <div class="w-col w-col-3 w-col-small-3 w-col-tiny-6">
+        <a href="http://engineering.dartmouth.edu" target="_blank" class="w-inline-block"><img width="100%" src="images/ThayerLogo_Horz_Color.png" class="sponsorlogo" /></a>
+      </div>
+      <div class="w-col w-col-3 w-col-small-3 w-col-tiny-6">
+        <a href="https://synergy.dartmouth.edu" target="_blank" class="w-inline-block"><img src="images/synergy.png" class="sponsorlogo" /></a>
+      </div>
+      <div class="w-col w-col-3 w-col-small-3 w-col-tiny-6">
+        <a href="http://cancer.dartmouth.edu" target="_blank" class="w-inline-block"><img src="images/nccc.png" class="sponsorlogo" /></a>
+      </div>
+    </div>
+  </div>
+
+</div>
